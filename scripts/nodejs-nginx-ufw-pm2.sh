@@ -61,6 +61,9 @@ sudo ufw allow OpenSSH
 # allow http & https through firewall
 sudo ufw allow 'Nginx Full'
 
+# allow react default port (dev)
+sudo ufw allow in on eth1 to any port 3000
+
 # enable firewall
 sudo ufw --force enable
 
